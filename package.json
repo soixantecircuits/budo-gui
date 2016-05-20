@@ -23,10 +23,20 @@
     "index.js"
   ],
   "dependencies": {
+    "babelify": "7.3.0",
+    "budo": "8.2.2",
     "crossroads": "^0.12.2",
+    "drag-and-drop-files": "0.0.1",
+    "drag-drop": "git://github.com/gabrielstuff/drag-drop.git#directory-webkit-support",
     "electron-debug": "^0.5.0",
     "hasher": "^1.2.0",
-    "signals": "^1.0.0"
+    "jquery": "2.2.3",
+    "lodash": "4.11.1",
+    "material-design-icons": "2.2.3",
+    "material-design-lite": "1.1.3",
+    "signals": "^1.0.0",
+    "vue": "1.0.21",
+    "vue-mdl": "0.7.3"
   },
   "devDependencies": {
     "standard": "^3.0.0",

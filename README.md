@@ -88,3 +88,5 @@ $ npm run build-win # windows 64bits app
 ## License
 
 MIT © gabrielstuff
+
+export NODE_ENV='production' && electron-packager . $npm_package_name --out=bin --platform=win32 --arch=x64 --ignore='^/bin$' --prune --version=$npm_package_electronVersion --overwrite && cp $npm_package_name.version ./bin/$npm_package_name-$npm_package_version-win32-x64/

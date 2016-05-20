@@ -1,5 +1,36 @@
-<h2>Home view</h2>
-
-<a href="#/page-1">Go to page 1</a>
-<a href="#/page-2">Go to page 2</a>
-
+<!-- Always shows a header, even in smaller screens. -->
+<div id="home" class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+<div id="dropTarget"></div>
+  <header class="mdl-layout__header">
+    <div class="mdl-layout__header-row">
+      <!-- Title -->
+      <span class="mdl-layout-title">Budō butler</span>
+      <!-- Add spacer, to align navigation to the right -->
+      <div class="mdl-layout-spacer"></div>
+      <!-- Navigation. We hide it in small screens. -->
+      <nav class="mdl-navigation mdl-layout--large-screen-only">
+        <a class="mdl-navigation__link" href="#/page-1">My apps</a>
+        <a class="mdl-navigation__link" href="#/page-2">Options</a>
+      </nav>
+    </div>
+  </header>
+  <div class="mdl-layout__drawer">
+    <span class="mdl-layout-title">Budō butler</span>
+    <nav class="mdl-navigation">
+      <a class="mdl-navigation__link" href="#/page-1">My apps</a>
+      <a class="mdl-navigation__link" href="#/page-2">Options</a>
+    </nav>
+  </div>
+  <main class="mdl-layout__content">
+  <mdl-progress indeterminate v-if="inprogress"></mdl-progress>
+    <div class="page-content">
+      <div id="serverList">
+        <ul class='mdl-list'>
+          <li class='mdl-list__item' v-for="server in servers">
+          <mdl-anchor-button v-mdl-ripple-effect href="{{server.url}}" target="_blank" data-open="browser">Open {{ server.name }}</mdl-anchor-button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </main>
+</div>

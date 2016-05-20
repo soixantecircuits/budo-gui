@@ -7,3 +7,15 @@ body {
 body {
 	font-family: -apple-system, 'Helvetica Neue', Helvetica, sans-serif;
 }
+
+div#dropTarget {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    border: 1px solid gray;
+    margin: 0px;
+    background: rgba(63, 81, 181, 0);
+    top:0px;
+    z-index:10;
+    pointer-events: none;
+}
