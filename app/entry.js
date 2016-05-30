@@ -10,7 +10,7 @@ require('./styles/main.css')
  * initialize your app here
 **/
 
-let $ = require('jQuery')
+let $ = require('jquery')
 window.$ = $
 window.jQuery = $
 
